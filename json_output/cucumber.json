@@ -1,0 +1,178 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Bein Sports Connect Australia Subscription Test Case",
+        "description": "",
+        "id": "digiturk-automation-via-bdd;bein-sports-connect-australia-subscription-test-case",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20341582546,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on Home Page",
+            "match": {
+              "location": "SubscriptionDefs.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4532635206,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks Subscribe button",
+            "match": {
+              "location": "SubscriptionDefs.user_Navigate_to_Subscribe_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8389510,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is directed to subscription page and displays package options",
+            "match": {
+              "location": "SubscriptionDefs.user_Displays_Subscribe_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 316333759,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user chooses Monthly Plan with Two Week Free Trial and clicks Subscribe button",
+            "match": {
+              "location": "SubscriptionDefs.user_Chooses_Monthly_Plan()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2033839774,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is directed to Create Account screen",
+            "match": {
+              "location": "SubscriptionDefs.user_Displays_Register_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 366848574,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user fills Create Account form with first name, last name, password and a random email",
+            "match": {
+              "location": "SubscriptionDefs.fill_Registration_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 439996162,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "clicks Create Account button",
+            "match": {
+              "location": "SubscriptionDefs.Create_Account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12232336240,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "a new account is created and payment method screen is displayed",
+            "match": {
+              "location": "SubscriptionDefs.user_Displays_Payment_Method()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 97524318,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user validates the package price",
+            "match": {
+              "location": "SubscriptionDefs.Validate_Amount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3601461422,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user makes payment with credit card",
+            "match": {
+              "location": "SubscriptionDefs.makes_Payment_Credit_Card()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3833037764,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user expects for a total charge of 1.00 since this is a free trial package",
+            "match": {
+              "location": "SubscriptionDefs.user_Validates_Free_Charge()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9287679757,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user provides a test card data detail and confirm payment",
+            "match": {
+              "location": "SubscriptionDefs.Fills_Credit_Card()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3639926711,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user displays a error text",
+            "match": {
+              "location": "SubscriptionDefs.user_Displays_Error_Message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Digiturk Automation via BDD",
+    "description": "",
+    "id": "digiturk-automation-via-bdd",
+    "keyword": "Feature",
+    "uri": "/Users/nilrakici/eclipse-workspace/Digiturk_BDD/src/main/java/features/feature"
+  }
+]

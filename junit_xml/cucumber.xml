@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="60.731592">
+<testcase classname="Digiturk Automation via BDD" name="Bein Sports Connect Australia Subscription Test Case" time="60.731592">
+<system-out><![CDATA[Given user is on Home Page..................................................passed
+When user clicks Subscribe button...........................................passed
+Then user is directed to subscription page and displays package options.....passed
+When user chooses Monthly Plan with Two Week Free Trial and clicks Subscribe button.passed
+Then user is directed to Create Account screen..............................passed
+When user fills Create Account form with first name, last name, password and a random email.passed
+And clicks Create Account button............................................passed
+Then a new account is created and payment method screen is displayed........passed
+And user validates the package price........................................passed
+When user makes payment with credit card....................................passed
+Then user expects for a total charge of 1.00 since this is a free trial package.passed
+When user provides a test card data detail and confirm payment..............passed
+Then user displays a error text.............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
