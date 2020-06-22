@@ -83,35 +83,35 @@ formatter.match({
   "location": "HomePageStepDefs.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 16211755382,
+  "duration": 17722267505,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageStepDefs.user_Navigate_to_Subscribe_Page()"
 });
 formatter.result({
-  "duration": 3501170744,
+  "duration": 3726868891,
   "status": "passed"
 });
 formatter.match({
   "location": "SubscribePageStepDefs.user_Displays_Subscribe_Page()"
 });
 formatter.result({
-  "duration": 38161317,
+  "duration": 19406472,
   "status": "passed"
 });
 formatter.match({
   "location": "SubscribePageStepDefs.user_Chooses_Monthly_Plan()"
 });
 formatter.result({
-  "duration": 285738579,
+  "duration": 305278303,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateAccountPageStepDefs.user_Displays_Register_Page()"
 });
 formatter.result({
-  "duration": 2665349306,
+  "duration": 1357833701,
   "status": "passed"
 });
 formatter.match({
@@ -128,42 +128,42 @@ formatter.match({
   "location": "CreateAccountPageStepDefs.fill_Registration_Page(String,String)"
 });
 formatter.result({
-  "duration": 592045809,
+  "duration": 470357802,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateAccountPageStepDefs.Create_Account()"
 });
 formatter.result({
-  "duration": 498754406,
+  "duration": 509020393,
   "status": "passed"
 });
 formatter.match({
   "location": "PaymentMethodPageStepDefs.user_Displays_Payment_Method()"
 });
 formatter.result({
-  "duration": 11421211320,
+  "duration": 10272218904,
   "status": "passed"
 });
 formatter.match({
   "location": "PaymentMethodPageStepDefs.Validate_Amount()"
 });
 formatter.result({
-  "duration": 96107242,
+  "duration": 126487944,
   "status": "passed"
 });
 formatter.match({
   "location": "PaymentMethodPageStepDefs.makes_Payment_Credit_Card()"
 });
 formatter.result({
-  "duration": 3527021152,
+  "duration": 3574817296,
   "status": "passed"
 });
 formatter.match({
   "location": "CreditCardPageStepDefs.user_Validates_Free_Charge()"
 });
 formatter.result({
-  "duration": 3666858677,
+  "duration": 3153255265,
   "status": "passed"
 });
 formatter.match({
@@ -184,14 +184,14 @@ formatter.match({
   "location": "CreditCardPageStepDefs.Fills_Credit_Card(String,String,String)"
 });
 formatter.result({
-  "duration": 9016887225,
+  "duration": 8929310086,
   "status": "passed"
 });
 formatter.match({
   "location": "CreditCardPageStepDefs.user_Displays_Error_Message()"
 });
 formatter.result({
-  "duration": 6694929055,
+  "duration": 4613457589,
   "status": "passed"
 });
 });

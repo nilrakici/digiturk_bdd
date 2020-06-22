@@ -12,7 +12,6 @@ import pages.SubscribePage;
 public class SubscribePageStepDefs extends TestBase {
 
 	SubscribePage subs;
-	CreateAccountPage register;
 
 	public SubscribePageStepDefs() {
 		// TODO Auto-generated constructor stub
@@ -31,7 +30,7 @@ public class SubscribePageStepDefs extends TestBase {
 	public void user_Chooses_Monthly_Plan() throws Throwable {
 		String detail = subs.validatePackageDetail();
 		Assert.assertEquals(detail, "Monthly Plan with Two Week Free Trial");
-		register = subs.clickMonthlyPlan();
+		subs.clickMonthlyPlan();
 
 	}
 

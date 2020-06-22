@@ -15,7 +15,7 @@ import pages.SubscribePage;
 public class CreateAccountPageStepDefs extends TestBase {
 
 	CreateAccountPage register;
-	PaymentMethodPage method;
+	
 
 	public CreateAccountPageStepDefs() {
 		// TODO Auto-generated constructor stub
@@ -38,7 +38,7 @@ public class CreateAccountPageStepDefs extends TestBase {
 	@And("^clicks Create Account button$")
 	public void Create_Account() throws Throwable {
 		Assert.assertTrue(register.validateCreateButton());
-		method = register.CreateAccount();
+		register.CreateAccount();
 
 	}
 

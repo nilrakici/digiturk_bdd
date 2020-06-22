@@ -12,7 +12,7 @@ import pages.PaymentMethodPage;
 public class PaymentMethodPageStepDefs extends TestBase {
 
 	PaymentMethodPage method;
-	CreditCardPage credit;
+	
 
 	public PaymentMethodPageStepDefs() {
 		// TODO Auto-generated constructor stub
@@ -36,7 +36,7 @@ public class PaymentMethodPageStepDefs extends TestBase {
 	@When("^user makes payment with credit card$")
 	public void makes_Payment_Credit_Card() throws Throwable {
 		Assert.assertEquals(method.validatePaymentMethod(), "Credit/Debit Card");
-		credit = method.GoMakePayment();
+	    method.GoMakePayment();
 
 	}
 

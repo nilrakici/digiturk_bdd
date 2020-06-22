@@ -15,7 +15,6 @@ import pages.SubscribePage;
 public class HomePageStepDefs extends TestBase {
 
 	HomePage homePage;
-	SubscribePage subs;
 
 	public HomePageStepDefs() {
 		// TODO Auto-generated constructor stub
@@ -33,7 +32,7 @@ public class HomePageStepDefs extends TestBase {
 	@When("^user clicks Subscribe button$")
 	public void user_Navigate_to_Subscribe_Page() throws Throwable {
 		Assert.assertTrue(homePage.SubButtonVisible());
-		subs = homePage.goToSubscribePage();
+		homePage.goToSubscribePage();
 
 	}
 
