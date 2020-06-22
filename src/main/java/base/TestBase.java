@@ -1,9 +1,11 @@
 package base;
 
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.StreamSupport;
 
+import org.apache.commons.logging.impl.Log4JLogger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -26,6 +28,8 @@ public class TestBase {
 
 	}
 
+	final static Logger logger = Logger.getAnonymousLogger();
+
 	public static void initialization() {
 
 		// initialization
@@ -46,6 +50,7 @@ public class TestBase {
 			wait.until(ExpectedConditions.elementToBeClickable(webe));
 
 		} catch (Exception e) {
+			logger.log(Level.SEVERE, "Element Not Interactable", e);
 
 		}
 	}
@@ -63,6 +68,7 @@ public class TestBase {
 			try {
 				waitFor(ExpectedConditions.visibilityOfElementLocated(locator), 20);
 			} catch (NullPointerException e) {
+				logger.log(Level.SEVERE, "program attempts to use an object reference that has the null value.", e);
 
 			}
 
@@ -87,7 +93,9 @@ public class TestBase {
 		}
 
 		catch (MoveTargetOutOfBoundsException e) {
-
+			logger.log(Level.SEVERE,
+					"the target provided to the actions move() method is invalid - outside of the size of the window.",
+					e);
 		}
 
 	}

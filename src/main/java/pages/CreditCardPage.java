@@ -52,19 +52,19 @@ public class CreditCardPage extends TestBase {
 
 	}
 
-	public void fillCreditCard() throws InterruptedException {
+	public void fillCreditCard(String cnames, String cno, String vno) throws InterruptedException {
 
 		Thread.sleep(4000);
-		cardname.sendKeys("Test Test");
+		cardname.sendKeys(cnames);
 		Thread.sleep(2000);
-		cardno.sendKeys("5890040000000016");
+		cardno.sendKeys(cno);
 
 		Select monthd = new Select(month);
 		monthd.selectByIndex(4);
 		Select yeard = new Select(year);
 		yeard.selectByIndex(2);
 
-		verno.sendKeys("000");
+		verno.sendKeys(vno);
 		confirm.click();
 
 	}

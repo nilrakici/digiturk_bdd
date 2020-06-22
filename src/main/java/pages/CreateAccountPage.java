@@ -1,5 +1,8 @@
 package pages;
 
+import java.security.SecureRandom;
+import java.util.UUID;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,6 +38,14 @@ public class CreateAccountPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
+	private static final String CHAR_LOWER = "abcdefghijklmnopqrstuvwxyz";
+	private static final String CHAR_UPPER = CHAR_LOWER.toUpperCase();
+	private static final String NUMBER = "0123456789";
+	private static final int length = 10;
+
+	private static final String DATA_FOR_RANDOM_STRING = CHAR_LOWER + CHAR_UPPER + NUMBER;
+	private static SecureRandom random = new SecureRandom();
+
 	public boolean validatePage() {
 
 		if (form.isDisplayed())
@@ -42,6 +53,40 @@ public class CreateAccountPage extends TestBase {
 
 		else
 			return false;
+
+	}
+
+	public boolean validateCreateButton() {
+
+		if (createbutton.isDisplayed())
+			return true;
+
+		else
+			return false;
+
+	}
+
+	public String generatePassword() {
+		if (length < 1)
+			throw new IllegalArgumentException();
+
+		StringBuilder sb = new StringBuilder(length);
+		for (int i = 0; i < length; i++) {
+
+			int rndCharAt = random.nextInt(DATA_FOR_RANDOM_STRING.length());
+			char rndChar = DATA_FOR_RANDOM_STRING.charAt(rndCharAt);
+
+			sb.append(rndChar);
+
+		}
+
+		return sb.toString();
+
+	}
+
+	public String generateMail() {
+
+		return generatePassword() + "@example.com";
 
 	}
 

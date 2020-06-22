@@ -7,11 +7,11 @@ When user clicks Subscribe button
 Then user is directed to subscription page and displays package options
 When user chooses Monthly Plan with Two Week Free Trial and clicks Subscribe button
 Then user is directed to Create Account screen
-When user fills Create Account form with first name, last name, password and a random email
+When user fills Create Account form with first name Nil ,lastname Rakici ,password and a random email
 And  clicks Create Account button
 Then a new account is created and payment method screen is displayed
 And  user validates the package price
 When user makes payment with credit card
 Then user expects for a total charge of 1.00 since this is a free trial package
-When user provides a test card data detail and confirm payment
+When user provides a test card data detail cardname Test Test  , card number 5890040000000016 , verification number 000  and confirm payment
 Then user displays a error text

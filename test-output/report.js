@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/Users/nilrakici/eclipse-workspace/Digiturk_BDD/src/main/java/features/feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/java/features/feature");
 formatter.feature({
   "line": 1,
   "name": "Digiturk Automation via BDD",
@@ -41,7 +41,7 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "user fills Create Account form with first name, last name, password and a random email",
+  "name": "user fills Create Account form with first name Nil ,lastname Rakici ,password and a random email",
   "keyword": "When "
 });
 formatter.step({
@@ -71,7 +71,7 @@ formatter.step({
 });
 formatter.step({
   "line": 16,
-  "name": "user provides a test card data detail and confirm payment",
+  "name": "user provides a test card data detail cardname Test Test  , card number 5890040000000016 , verification number 000  and confirm payment",
   "keyword": "When "
 });
 formatter.step({
@@ -80,94 +80,118 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "SubscriptionDefs.user_is_on_Home_Page()"
+  "location": "HomePageStepDefs.user_is_on_Home_Page()"
 });
 formatter.result({
-  "duration": 20341582546,
+  "duration": 16211755382,
   "status": "passed"
 });
 formatter.match({
-  "location": "SubscriptionDefs.user_Navigate_to_Subscribe_Page()"
+  "location": "HomePageStepDefs.user_Navigate_to_Subscribe_Page()"
 });
 formatter.result({
-  "duration": 4532635206,
+  "duration": 3501170744,
   "status": "passed"
 });
 formatter.match({
-  "location": "SubscriptionDefs.user_Displays_Subscribe_Page()"
+  "location": "SubscribePageStepDefs.user_Displays_Subscribe_Page()"
 });
 formatter.result({
-  "duration": 8389510,
+  "duration": 38161317,
   "status": "passed"
 });
 formatter.match({
-  "location": "SubscriptionDefs.user_Chooses_Monthly_Plan()"
+  "location": "SubscribePageStepDefs.user_Chooses_Monthly_Plan()"
 });
 formatter.result({
-  "duration": 316333759,
+  "duration": 285738579,
   "status": "passed"
 });
 formatter.match({
-  "location": "SubscriptionDefs.user_Displays_Register_Page()"
+  "location": "CreateAccountPageStepDefs.user_Displays_Register_Page()"
 });
 formatter.result({
-  "duration": 2033839774,
+  "duration": 2665349306,
   "status": "passed"
 });
 formatter.match({
-  "location": "SubscriptionDefs.fill_Registration_Page()"
+  "arguments": [
+    {
+      "val": "Nil",
+      "offset": 47
+    },
+    {
+      "val": "Rakici",
+      "offset": 61
+    }
+  ],
+  "location": "CreateAccountPageStepDefs.fill_Registration_Page(String,String)"
 });
 formatter.result({
-  "duration": 366848574,
+  "duration": 592045809,
   "status": "passed"
 });
 formatter.match({
-  "location": "SubscriptionDefs.Create_Account()"
+  "location": "CreateAccountPageStepDefs.Create_Account()"
 });
 formatter.result({
-  "duration": 439996162,
+  "duration": 498754406,
   "status": "passed"
 });
 formatter.match({
-  "location": "SubscriptionDefs.user_Displays_Payment_Method()"
+  "location": "PaymentMethodPageStepDefs.user_Displays_Payment_Method()"
 });
 formatter.result({
-  "duration": 12232336240,
+  "duration": 11421211320,
   "status": "passed"
 });
 formatter.match({
-  "location": "SubscriptionDefs.Validate_Amount()"
+  "location": "PaymentMethodPageStepDefs.Validate_Amount()"
 });
 formatter.result({
-  "duration": 97524318,
+  "duration": 96107242,
   "status": "passed"
 });
 formatter.match({
-  "location": "SubscriptionDefs.makes_Payment_Credit_Card()"
+  "location": "PaymentMethodPageStepDefs.makes_Payment_Credit_Card()"
 });
 formatter.result({
-  "duration": 3601461422,
+  "duration": 3527021152,
   "status": "passed"
 });
 formatter.match({
-  "location": "SubscriptionDefs.user_Validates_Free_Charge()"
+  "location": "CreditCardPageStepDefs.user_Validates_Free_Charge()"
 });
 formatter.result({
-  "duration": 3833037764,
+  "duration": 3666858677,
   "status": "passed"
 });
 formatter.match({
-  "location": "SubscriptionDefs.Fills_Credit_Card()"
+  "arguments": [
+    {
+      "val": "Test Test",
+      "offset": 47
+    },
+    {
+      "val": "5890040000000016",
+      "offset": 72
+    },
+    {
+      "val": "000",
+      "offset": 111
+    }
+  ],
+  "location": "CreditCardPageStepDefs.Fills_Credit_Card(String,String,String)"
 });
 formatter.result({
-  "duration": 9287679757,
+  "duration": 9016887225,
   "status": "passed"
 });
 formatter.match({
-  "location": "SubscriptionDefs.user_Displays_Error_Message()"
+  "location": "CreditCardPageStepDefs.user_Displays_Error_Message()"
 });
 formatter.result({
-  "duration": 3639926711,
+  "duration": 6694929055,
   "status": "passed"
 });
 });

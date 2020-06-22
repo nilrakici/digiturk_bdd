@@ -36,7 +36,7 @@ public class HomePage extends TestBase {
 
 	public String ValidateTitle() {
 		// TODO Auto-generated method stub
-		return null;
+		return driver.getTitle();
 	}
 
 }

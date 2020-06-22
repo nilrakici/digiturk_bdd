@@ -5,7 +5,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "/Users/nilrakici/eclipse-workspace/Digiturk_BDD/src/main/java/features/feature", // the
+@CucumberOptions(features = "src/main/java/features/feature", // the
 																												// path
 																												// of
 																												// the

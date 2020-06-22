@@ -12,157 +12,181 @@
         "steps": [
           {
             "result": {
-              "duration": 20341582546,
+              "duration": 16211755382,
               "status": "passed"
             },
             "line": 5,
             "name": "user is on Home Page",
             "match": {
-              "location": "SubscriptionDefs.user_is_on_Home_Page()"
+              "location": "HomePageStepDefs.user_is_on_Home_Page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4532635206,
+              "duration": 3501170744,
               "status": "passed"
             },
             "line": 6,
             "name": "user clicks Subscribe button",
             "match": {
-              "location": "SubscriptionDefs.user_Navigate_to_Subscribe_Page()"
+              "location": "HomePageStepDefs.user_Navigate_to_Subscribe_Page()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 8389510,
+              "duration": 38161317,
               "status": "passed"
             },
             "line": 7,
             "name": "user is directed to subscription page and displays package options",
             "match": {
-              "location": "SubscriptionDefs.user_Displays_Subscribe_Page()"
+              "location": "SubscribePageStepDefs.user_Displays_Subscribe_Page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 316333759,
+              "duration": 285738579,
               "status": "passed"
             },
             "line": 8,
             "name": "user chooses Monthly Plan with Two Week Free Trial and clicks Subscribe button",
             "match": {
-              "location": "SubscriptionDefs.user_Chooses_Monthly_Plan()"
+              "location": "SubscribePageStepDefs.user_Chooses_Monthly_Plan()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2033839774,
+              "duration": 2665349306,
               "status": "passed"
             },
             "line": 9,
             "name": "user is directed to Create Account screen",
             "match": {
-              "location": "SubscriptionDefs.user_Displays_Register_Page()"
+              "location": "CreateAccountPageStepDefs.user_Displays_Register_Page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 366848574,
+              "duration": 592045809,
               "status": "passed"
             },
             "line": 10,
-            "name": "user fills Create Account form with first name, last name, password and a random email",
+            "name": "user fills Create Account form with first name Nil ,lastname Rakici ,password and a random email",
             "match": {
-              "location": "SubscriptionDefs.fill_Registration_Page()"
+              "arguments": [
+                {
+                  "val": "Nil",
+                  "offset": 47
+                },
+                {
+                  "val": "Rakici",
+                  "offset": 61
+                }
+              ],
+              "location": "CreateAccountPageStepDefs.fill_Registration_Page(String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 439996162,
+              "duration": 498754406,
               "status": "passed"
             },
             "line": 11,
             "name": "clicks Create Account button",
             "match": {
-              "location": "SubscriptionDefs.Create_Account()"
+              "location": "CreateAccountPageStepDefs.Create_Account()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 12232336240,
+              "duration": 11421211320,
               "status": "passed"
             },
             "line": 12,
             "name": "a new account is created and payment method screen is displayed",
             "match": {
-              "location": "SubscriptionDefs.user_Displays_Payment_Method()"
+              "location": "PaymentMethodPageStepDefs.user_Displays_Payment_Method()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 97524318,
+              "duration": 96107242,
               "status": "passed"
             },
             "line": 13,
             "name": "user validates the package price",
             "match": {
-              "location": "SubscriptionDefs.Validate_Amount()"
+              "location": "PaymentMethodPageStepDefs.Validate_Amount()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3601461422,
+              "duration": 3527021152,
               "status": "passed"
             },
             "line": 14,
             "name": "user makes payment with credit card",
             "match": {
-              "location": "SubscriptionDefs.makes_Payment_Credit_Card()"
+              "location": "PaymentMethodPageStepDefs.makes_Payment_Credit_Card()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3833037764,
+              "duration": 3666858677,
               "status": "passed"
             },
             "line": 15,
             "name": "user expects for a total charge of 1.00 since this is a free trial package",
             "match": {
-              "location": "SubscriptionDefs.user_Validates_Free_Charge()"
+              "location": "CreditCardPageStepDefs.user_Validates_Free_Charge()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 9287679757,
+              "duration": 9016887225,
               "status": "passed"
             },
             "line": 16,
-            "name": "user provides a test card data detail and confirm payment",
+            "name": "user provides a test card data detail cardname Test Test  , card number 5890040000000016 , verification number 000  and confirm payment",
             "match": {
-              "location": "SubscriptionDefs.Fills_Credit_Card()"
+              "arguments": [
+                {
+                  "val": "Test Test",
+                  "offset": 47
+                },
+                {
+                  "val": "5890040000000016",
+                  "offset": 72
+                },
+                {
+                  "val": "000",
+                  "offset": 111
+                }
+              ],
+              "location": "CreditCardPageStepDefs.Fills_Credit_Card(String,String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3639926711,
+              "duration": 6694929055,
               "status": "passed"
             },
             "line": 17,
             "name": "user displays a error text",
             "match": {
-              "location": "SubscriptionDefs.user_Displays_Error_Message()"
+              "location": "CreditCardPageStepDefs.user_Displays_Error_Message()"
             },
             "keyword": "Then "
           }
@@ -173,6 +197,6 @@
     "description": "",
     "id": "digiturk-automation-via-bdd",
     "keyword": "Feature",
-    "uri": "/Users/nilrakici/eclipse-workspace/Digiturk_BDD/src/main/java/features/feature"
+    "uri": "src/main/java/features/feature"
   }
 ]
